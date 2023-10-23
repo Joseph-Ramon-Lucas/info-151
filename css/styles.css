@@ -387,6 +387,7 @@ textarea {
 body {
   color: var(--white);
   background-color: var(--purple);
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0 10%;
 }
 body div ul li {
