@@ -395,6 +395,7 @@ body div ul li {
 }
 body div ul li a {
   color: var(--white);
+  text-decoration: none;
 }
 
 div h1 {
