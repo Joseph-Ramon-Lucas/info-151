@@ -13,6 +13,13 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --purple: #5319a6;
+  --lightpurple: #7937D7;
+  --purpleFocus: #5726AE;
+  --primaryLightBlue: #42B4EE;
+  --normalButtonText: #6FB8EA;
+  --normalButtonBG: #EEF7FC;
+  --focusButtonBG: #64B3E9;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
