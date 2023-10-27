@@ -1,6 +1,6 @@
 body {
     color: var(--white);
-    background-color: var(--purple);
+    background: linear-gradient(var(--purple), var(--lightpurple2));
     font-family: Arial, Helvetica, sans-serif;
     
     margin: 0 10%;
@@ -32,10 +32,11 @@ body {
 
 
 
+
 .blueButtons {
     color: var(--white);
     background-color: var(--primaryLightBlue);
-    padding: 10px 20px;
+    padding: 20px 30px;
     margin: 25px 0;
     border-radius: 5px;
     border: 0px;

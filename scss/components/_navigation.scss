@@ -1,3 +1,30 @@
 /* =============
     Navigation
 ============= */
+body {
+    div {
+        ul {
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            
+            
+            li:not(#logo) {
+                padding: 0 30px;
+                
+                a:link, a:visited {
+                    color: var(--greyText);
+                }
+                a:hover, a:active{
+                    color: var(--primaryLightBlue);
+                    text-decoration: underline solid;
+                    transition: .5s
+                }
+            }
+        }
+    }
+}
+#logo {
+    margin-right: auto;
+
+}
