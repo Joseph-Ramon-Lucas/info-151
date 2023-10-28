@@ -1,6 +1,6 @@
 body {
     color: var(--white);
-    background: linear-gradient(var(--purple), var(--lightpurple2));
+    background: linear-gradient(to right, var(--purple), var(--lightpurple2));
     font-family: Arial, Helvetica, sans-serif;
     
     margin: 0 10%;
@@ -28,8 +28,34 @@ body {
         }
         
     }
+    #contentDiv {
+        display: flex;
+        
 
+        
+        div{
+             
+            flex-direction: column;
+            margin-right: 0%;
+            
+            // img{
+            //     display: flex;
+            //     margin-left: auto;
+            //     justify-content: flex-end;
+            //     align-items: center;
+            // }
 
+        }
+    }
+
+    #bgImageDiv{
+        background-image: url("../../img/hero.png");
+        height: 562px;
+        width: 752px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
 
 
 

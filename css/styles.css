@@ -416,8 +416,8 @@ body div ul li:not(#logo) a:hover, body div ul li:not(#logo) a:active {
 ============= */
 body {
   color: var(--white);
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--purple)), to(var(--lightpurple2)));
-  background: linear-gradient(var(--purple), var(--lightpurple2));
+  background: -webkit-gradient(linear, left top, right top, from(var(--purple)), to(var(--lightpurple2)));
+  background: linear-gradient(to right, var(--purple), var(--lightpurple2));
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 10%;
 }
@@ -434,6 +434,28 @@ div h1 {
 }
 div p {
   margin: 25px 50% 0 0;
+}
+
+#contentDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#contentDiv div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 0%;
+}
+
+#bgImageDiv {
+  background-image: url("../../img/hero.png");
+  height: 562px;
+  width: 752px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .blueButtons {
