@@ -393,7 +393,7 @@ textarea {
     Footer
 ============= */
 body {
-  padding: 10% 20%;
+  padding: 10% 15%;
   text-decoration: none;
   background-color: var(--footerBG);
   color: white;
@@ -418,10 +418,17 @@ body footer #desc {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
 }
 body footer #desc img {
   margin: 20px 0;
   margin-right: auto;
+}
+body footer #desc p {
+  padding: 0 auto;
 }
 body footer #desc ul {
   display: -webkit-box;
@@ -434,8 +441,12 @@ body footer #desc ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body footer #desc ul li {
+  margin: 0 50%;
 }
 body footer div {
   display: -webkit-box;
@@ -471,7 +482,11 @@ body footer div ul {
   padding: 10px 0;
 }
 body footer div ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   list-style-type: none;
+  margin: 0 10%;
 }
 body footer div ul li ul {
   display: -webkit-box;
@@ -481,6 +496,9 @@ body footer div ul li ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 body footer div ul li ul li {
   list-style-type: none;
@@ -498,6 +516,21 @@ body footer div ul li ul li h3 {
   border: none;
   border-radius: 0 10px 10px 0;
   padding: 10px 25px;
+}
+
+#newsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#newsList li div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #form {
