@@ -388,31 +388,63 @@ textarea {
 /* =============
     Footer
 ============= */
-body {
+body:not(#topNav) {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(248, 248, 248);
   text-decoration: none;
 }
-body div {
+body:not(#topNav) div {
   text-align: center;
   background-color: white;
   padding: 10px;
 }
-body div {
-  margin: 5% 25%;
+body:not(#topNav) div {
   border-radius: 10px;
 }
-body div ul li {
+body:not(#topNav) div ul li {
   list-style-type: none;
-  margin: 10px 40px;
-  padding: 10px 20px;
+  padding: 10px 10%;
+  padding: auto;
 }
-body div ul li .hr {
+body:not(#topNav) div ul li .hr {
   margin: 5px 20%;
+}
+
+#contentDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#contentDiv div {
+  margin: 5% 3%;
+  -webkit-box-shadow: 0px 0px 100px rgb(234, 234, 234);
+          box-shadow: 0px 0px 100px rgb(234, 234, 234);
 }
 
 .focusPackage {
   border: solid 3px var(--purpleFocus);
+  z-index: 1;
+}
+.focusPackage ul #focusBG {
+  top: 90px;
+  position: absolute;
+  z-index: -1;
+  margin: 5% -10px;
+  border-radius: 0px;
+  background-image: url("../../img/FocusPurpleWaveArt.png");
+  background-repeat: no-repeat;
+  height: 165px;
+  width: 22%;
+  background-position: center -150%;
+  background-size: cover;
+}
+.focusPackage ul h6 {
+  color: white;
+}
+.focusPackage ul h2 {
+  color: white;
 }
 
 .normalButton {
