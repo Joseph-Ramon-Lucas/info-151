@@ -4,27 +4,71 @@ body {
     background-color: var(--footerBG);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    div{
-        img{
-            margin: 20px 0;
-        }
-    }
-    div {
-        p {
-            color: var(--greyText);
-        }
-        h3 {
-            padding: 10px 0;
-        }
-        ul {
-            padding: 10px 0;
-            li {
-                list-style-type: none;
-                color: var(--greyText);
-                padding: 5px 0;
+
+    
+    footer{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        #desc{
+            // display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img{
+                margin: 20px 0;
+                margin-right: auto;
+            }
+            ul{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content:space-around;
+                
             }
         }
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-around;
+    
+            p {
+                color: var(--greyText);
+            }
+            ul{
+                display: flex;
+                        flex-direction: row;
+                        align-items:first baseline;
+                        justify-content: space-between;
+                        padding: 10px 0;
+                li{
+                    list-style-type: none;
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+
+
+                        
+                        li {
+                            h3 {
+                                color: white;
+                                padding: 10px 0;
+                            }
+                            list-style-type: none;
+                            color: var(--greyText);
+                            padding: 5px 0;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+
     }
+    
 }
 
 #sendButton {
