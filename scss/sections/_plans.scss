@@ -48,16 +48,16 @@ body:not(#topNav) {
       top: 90px;
       position:absolute;
       z-index: -1;
-      margin: 5% -10px;
+      margin: 5% -38px;
       // padding-right: 87px;
-      // padding-right: 10%;
-      border-radius: 0px;
+      padding-right: 25%;
+      border-radius: 4px;
 
       background-image: url("../../img/FocusPurpleWaveArt.png");
       background-repeat: no-repeat;
       height: 165px;
       // width: 170px;
-      width: 22%;
+      // width: 22%;
       
       background-position: center -150%;
       background-size: cover;

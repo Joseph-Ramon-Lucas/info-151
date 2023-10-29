@@ -431,12 +431,12 @@ body:not(#topNav) div ul li .hr {
   top: 90px;
   position: absolute;
   z-index: -1;
-  margin: 5% -10px;
-  border-radius: 0px;
+  margin: 5% -38px;
+  padding-right: 25%;
+  border-radius: 4px;
   background-image: url("../../img/FocusPurpleWaveArt.png");
   background-repeat: no-repeat;
   height: 165px;
-  width: 22%;
   background-position: center -150%;
   background-size: cover;
 }
