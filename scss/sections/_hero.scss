@@ -5,57 +5,84 @@ body {
     
     margin: 0 10%;
 
-    div{
-        ul{
-            li {
-                list-style-type: none;
-                
-                a {
-                    color: var(--white);
-                    text-decoration: none;
+    main {
+
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". main-grid-item .";
+        #main-grid-item{
+            grid-area: main-grid-item;
+            div{
+                ul{
+                    li {
+                        list-style-type: none;
+                        
+                        a {
+                            color: var(--white);
+                            text-decoration: none;
+                            }
+                        }
                     }
                 }
             }
-        }
-    }
-    div {
-        h1 {
-            margin: 25px 50% 0 0;
-
-        }
-        p {
-            margin: 25px 50% 0 0;
-        }
+            // div {
+            //     h1 {
+            //         // margin: 25px 50% 0 0;
         
-    }
-    #contentDiv {
-        display: flex;
-        
-
-        
-        div{
-             
-            flex-direction: column;
-            margin-right: 0%;
-            
-            // img{
-            //     display: flex;
-            //     margin-left: auto;
-            //     justify-content: flex-end;
-            //     align-items: center;
+            //     }
+            //     p {
+            //         // margin: 25px 50% 0 0;
+            //     }
+                
             // }
+            #contentDiv {
+                // display: flex;
+                display: grid;
+                grid-template-columns: 500px auto;
+                grid-template-areas: "content bgImageDiv";
+                padding: 100px;
+        
+                
+                #content{
+                    grid-area: content;
+                     
+                    // flex-direction: column;
+                    // margin-right: 0%;
+                    
+                    h1{
+                        font-size: 60px;
+                        padding: 25px 0 0 0;
 
+                    }
+                    p {
+                        font-size:larger;
+                        padding: 25px 0% 0 0;
+                    }
+                    
+                    // img{
+                    //     display: flex;
+                    //     margin-left: auto;
+                    //     justify-content: flex-end;
+                    //     align-items: center;
+                    // }
+        
+                }
+                #bgImageDiv{
+                    background-image: url("../../img/hero.png");
+                    height: 562px;
+                    width: 752px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: right;
+                }
         }
+        
     }
 
-    #bgImageDiv{
-        background-image: url("../../img/hero.png");
-        height: 562px;
-        width: 752px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: right;
+    
     }
+
+
 
 
 
