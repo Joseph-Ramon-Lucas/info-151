@@ -421,35 +421,47 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 10%;
 }
-body div ul li {
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1200px auto;
+  grid-template-columns: auto 1200px auto;
+      grid-template-areas: ". main-grid-item .";
+}
+body main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-grid-item;
+}
+body main #main-grid-item div ul li {
   list-style-type: none;
 }
-body div ul li a {
+body main #main-grid-item div ul li a {
   color: var(--white);
   text-decoration: none;
 }
-
-div h1 {
-  margin: 25px 50% 0 0;
+body main #contentDiv {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 500px auto;
+  grid-template-columns: 500px auto;
+      grid-template-areas: "content bgImageDiv";
+  padding: 100px;
 }
-div p {
-  margin: 25px 50% 0 0;
+body main #contentDiv #content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: content;
 }
-
-#contentDiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+body main #contentDiv #content h1 {
+  font-size: 60px;
+  padding: 25px 0 0 0;
 }
-#contentDiv div {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 0%;
+body main #contentDiv #content p {
+  font-size: larger;
+  padding: 25px 0% 0 0;
 }
-
-#bgImageDiv {
+body main #contentDiv #bgImageDiv {
   background-image: url("../../img/hero.png");
   height: 562px;
   width: 752px;
