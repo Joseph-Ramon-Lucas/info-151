@@ -392,21 +392,36 @@ body:not(#topNav) {
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
-body:not(#topNav) div {
+body:not(#topNav) main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1300px auto;
+  grid-template-columns: auto 1300px auto;
+      grid-template-areas: ". main-grid-item .";
+}
+body:not(#topNav) main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-grid-item;
+}
+body:not(#topNav) main #main-grid-item div {
   text-align: center;
   background-color: white;
   padding: 10px;
 }
-body:not(#topNav) div {
+body:not(#topNav) main #main-grid-item div {
   border-radius: 10px;
 }
-body:not(#topNav) div ul li {
+body:not(#topNav) main #main-grid-item div ul li {
   list-style-type: none;
   padding: 10px 10%;
   padding: auto;
 }
-body:not(#topNav) div ul li .hr {
+body:not(#topNav) main #main-grid-item div ul li .hr {
   margin: 5px 20%;
+}
+body:not(#topNav) main #main-grid-item div ul li h2 {
+  font-size: 40px;
 }
 
 #contentDiv {
@@ -419,8 +434,8 @@ body:not(#topNav) div ul li .hr {
 }
 #contentDiv div {
   margin: 5% 3%;
-  -webkit-box-shadow: 0px 0px 100px rgb(234, 234, 234);
-          box-shadow: 0px 0px 100px rgb(234, 234, 234);
+  -webkit-box-shadow: 0px 0px 100px rgb(207, 207, 207);
+          box-shadow: 0px 0px 100px rgb(207, 207, 207);
 }
 
 .focusPackage {
@@ -431,12 +446,12 @@ body:not(#topNav) div ul li .hr {
   top: 90px;
   position: absolute;
   z-index: -1;
-  margin: 5% -38px;
-  padding-right: 25%;
-  border-radius: 4px;
+  margin: 60px -38px;
+  border-radius: 5px;
   background-image: url("../../img/FocusPurpleWaveArt.png");
   background-repeat: no-repeat;
-  height: 165px;
+  height: 205px;
+  width: 273.5px;
   background-position: center -150%;
   background-size: cover;
 }
@@ -458,7 +473,7 @@ body:not(#topNav) div ul li .hr {
 }
 
 .focusButton {
-  color: white;
+  color: var(--white);
   background-color: var(--focusButtonBG);
   padding: 5px 15px;
   border: none;
@@ -487,9 +502,10 @@ body:not(#topNav) div ul li .hr {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #cccccc;
+  background-color: rgb(217, 240, 252);
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  border: #2196F3;
 }
 
 .slider:before {
@@ -499,13 +515,13 @@ body:not(#topNav) div ul li .hr {
   width: 15px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: rgb(66, 180, 238);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: rgb(217, 240, 252);
 }
 
 input:focus + .slider {
