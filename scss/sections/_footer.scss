@@ -11,11 +11,11 @@ body {
         display: flex;
 
         flex-direction: row;
-        justify-content: space-around;
+        justify-content:center;
         #desc{
-            // display: flex;
+            display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items:flex-start;
             margin:0;
             flex:0;
 
@@ -24,16 +24,25 @@ body {
                 margin-right: auto;
             }
             p {
-                padding: 0 auto;
+                padding: 0 0px;
+                text-align: left;
+                
             }
             ul{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content:center;
+                // display: flex;
+                // flex-direction: row;
+                // align-items: center;
+                // justify-content:center;
+            
+
+                display: grid;
+                grid-template-columns: 70px 70px 70px 70px;
+                // padding-right: 100px;
+                grid-area: "twitter facebook insta linkedin";
                 li{
                     // padding: 0 50%;
-                    margin: 0 50%
+                    // margin: 0 50%
+                    
                 }
                 
             }
@@ -43,25 +52,35 @@ body {
             flex-direction: row;
             align-items:center;
             justify-content: space-around;
+            
     
             p {
                 color: var(--greyText);
             }
             ul{
+                display: grid;
+                grid-template-columns: 35% 25% 35%;
+                grid-area: "Resources Useful-links Newsletter";
+                
+                
+
                 display: flex;
                 flex-direction: row;
                 align-items:first baseline;
                 justify-content: space-between;
                 padding: 10px 0;
                 li{
-                    display: flex;
+                    // display: flex;
 
                     list-style-type: none;
-                    margin: 0 10%;
+                    margin: 0 20px;
                     ul {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content:center;
+                        // display: flex;
+                        // flex-direction: column;
+                        // justify-content:center;
+
+                        display: grid;
+                        grid-template-columns: auto;
 
                         
                         li {
@@ -91,7 +110,7 @@ body {
     background-color: var(--sendButtonBG);
     color: white;
     border: none;
-    border-radius:  0 10px 10px 0;
+    border-radius:  0 5px 5px 0;
     padding: 10px 25px;
 
 }
@@ -114,7 +133,7 @@ body {
     
     input {
         padding: 10px 25px;
-        border-radius: 10px 0 0 10px;
+        border-radius: 5px 0 0 5px;
         background-color: var(--footerBG);
         border: solid 1px var(--greyText);
 
