@@ -331,6 +331,11 @@ template {
 /* =============
     Base
 ============= */
+#validation-bin {
+  text-align: center;
+  margin-top: 70vh;
+}
+
 /* =============
     Typography
 ============= */
