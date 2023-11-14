@@ -13,6 +13,8 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --lightgrey: #b6b6b6;
+  --darkaqua: #024A58;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -331,6 +333,19 @@ template {
 /* =============
     Base
 ============= */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
 #validation-bin {
   text-align: center;
   margin-top: 70vh;
@@ -339,6 +354,20 @@ template {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -365,29 +394,133 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+}
+nav ul li:last-child {
+  border: none;
+}
+nav ul li {
+  border-bottom: 1px solid purple;
+  width: 100%;
+  text-align: right;
+}
+nav ul li a:link, nav ul li a:visited {
+  padding: 24px;
+  width: 100%;
+  display: inline-block;
+  color: var(--black);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+nav ul li a:hover, nav ul li a:active {
+  color: var(--lightgrey);
+}
+nav ul li .SignIns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 15px 24px 0 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border: none;
+}
+nav ul li .SignIns #signin {
+  background-color: var(--darkaqua);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 40px;
+  margin: 0 20px 0 0;
+  text-wrap: nowrap;
+}
+nav ul li .SignIns #signin:hover {
+  background-color: var();
+}
+nav ul li .SignIns #signup {
+  background-color: var(--white);
+  color: var(--darkaqua);
+  border: 1px solid var(--darkaqua);
+  border-radius: 10px;
+  padding: 15px 40px;
+  margin: 0 0 0 20px;
+  text-wrap: nowrap;
+}
+
 /* =============
     Header
 ============= */
 header {
-  padding: 12px 24px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 30% 10% 10%;
-  grid-template-columns: 50% 30% 10% 10%;
+  padding: 12px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-header #logo-container {
-  border: 1px solid red;
+header #topHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 24px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-header #burger-menu {
-  border: 1px solid blue;
+header #topHeader #logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: logo;
+}
+header #topHeader #burger-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: burg;
 }
 header nav {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-header #SignIns {
-  border: 1px solid green;
-}
-
 /* =============
     Footer
 ============= */

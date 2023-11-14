@@ -5,19 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>Week 7 Step 1 - Navigation </title>
 </head>
 
 <body>
 
     <header>
-        <section id="logo-container">
-            <img src="img/logo.svg" alt="Logo for Website">
-        </section>
 
-        <section id="burger">
-            <img id="burger-menu" src="/img/burger-solid.svg" alt="hamburger menu">
-        </section>
+        <div id="topHeader">
+            <section id="logo-container">
+                <img src="img/logo.svg" alt="Logo for Website">
+            </section>
+    
+    
+            <section id="burger-container">
+                <img id="burger-icon" src="/img/burger-menu-lines.svg" alt="hamburger menu">
+            </section>
+        </div>
+
+        
+        
 
         <nav>
             <ul>
@@ -25,13 +36,13 @@
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Impact</a></li>
                 <li><a href="#">Locations</a></li>
+                <li><section class="SignIns">
+                    <button id="signin">Sign In</button>
+                    <button id="signup">Sign Up</button>
+                    </section>
+                </li>
             </ul>
         </nav>
-
-        <section id="SignIns">
-            <button id="signin">Sign In</button>
-            <button id="signup">Sign Up</button>
-        </section>
 
 
     </header>

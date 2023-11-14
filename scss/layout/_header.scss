@@ -3,24 +3,54 @@
 ============= */
 
 header{
-    padding: 12px 24px;
-    display: grid;
-    grid-template-columns: 50% 30% 10% 10%;
+    padding: 12px 0px;
+    display: flex;
+    flex-direction: column;
+        
+    #topHeader {
+        display: flex;
+        padding: 0 24px;
+        width: 100%;
+        justify-content:space-between;
+        #logo-container {
+            // border: 1px solid red;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+    
+            grid-area: logo;
+            
+        }
+        #burger-container {
+            // border: 1px solid blue;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+    
+            grid-area: burg;
+    
+        }
 
-    #logo-container {
-        border: 1px solid red;
     }
+    
 
-    #burger-menu {
-        border: 1px solid blue;
-    }
+    
 
     nav {
-        display: none;
+        // display: none;
+        // border: 1px solid rgb(49, 138, 222);
+
+        display: flex;
+        justify-content: flex-end;
+        
+        // grid-area: nav;
     }
 
-    #SignIns {
-        border: 1px solid green;
+    .SignIns {
+        // display: none;
+        // border: 1px solid green;
+
+        // grid-area: sign;
 
     }
 }
