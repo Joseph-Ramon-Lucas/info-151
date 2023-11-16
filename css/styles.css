@@ -371,6 +371,14 @@ p {
 /* =============
     Buttons
 ============= */
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 /* =============
     Forms
 ============= */
@@ -394,6 +402,15 @@ textarea {
 /* =============
     Navigation
 ============= */
+.showMiniNav {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 a {
   text-decoration: none;
 }
@@ -563,12 +580,7 @@ header #topHeader #burger-container {
   }
 }
 header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  display: none;
 }
 @media (min-width: 1024px) {
   header nav {

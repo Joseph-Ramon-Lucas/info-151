@@ -3,6 +3,12 @@
 ============= */
 
 
+.showMiniNav {
+    display:flex !important;
+    justify-content: flex-end;
+}
+
+
 a {
     text-decoration: none;
 }
