@@ -6,12 +6,29 @@ header{
     padding: 12px 0px;
     display: flex;
     flex-direction: column;
+    @include lg {
+        padding: 24px 0px;
+    }
         
     #topHeader {
-        display: flex;
+
+        @include lg{
+            
+            width: auto;
+            
+        }
         padding: 0 24px;
+        display: flex;
+        
         width: 100%;
         justify-content:space-between;
+        nav {
+            display: none;
+            @include lg {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
         #logo-container {
             // border: 1px solid red;
             display: flex;
@@ -28,6 +45,10 @@ header{
             align-items: center;
     
             grid-area: burg;
+
+            @include lg {
+                display: none;
+            }
     
         }
 
@@ -42,6 +63,9 @@ header{
 
         display: flex;
         justify-content: flex-end;
+        @include lg {
+            display: none;
+        }
         
         // grid-area: nav;
     }
