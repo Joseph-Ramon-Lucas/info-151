@@ -6,7 +6,11 @@
 .showMiniNav {
     display:flex !important;
     justify-content: flex-end;
+    @include lg {
+        display: none !important;
+    }
 }
+
 
 
 a {

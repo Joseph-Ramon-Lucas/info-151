@@ -410,6 +410,11 @@ textarea {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+@media (min-width: 1024px) {
+  .showMiniNav {
+    display: none !important;
+  }
+}
 
 a {
   text-decoration: none;

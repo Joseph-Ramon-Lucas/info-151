@@ -8,7 +8,7 @@ let isNavVisible = false;
 
 burgerButton.addEventListener("click", () => {
     if (!isNavVisible) {
-        miniNav .classList.add("showMiniNav");
+        miniNav.classList.add("showMiniNav");
         isNavVisible = true;
     } else {
         miniNav.classList.remove("showMiniNav");
