@@ -465,7 +465,7 @@ nav ul li .SignIns {
           justify-content: flex-end;
   border: none;
 }
-nav ul li .SignIns #signin {
+nav ul li .SignIns .signin {
   background-color: var(--darkaqua);
   color: var(--white);
   border: none;
@@ -474,10 +474,10 @@ nav ul li .SignIns #signin {
   margin: 0 20px 0 0;
   text-wrap: nowrap;
 }
-nav ul li .SignIns #signin:hover {
+nav ul li .SignIns .signin:hover {
   background-color: var();
 }
-nav ul li .SignIns #signup {
+nav ul li .SignIns .signup {
   background-color: var(--white);
   color: var(--darkaqua);
   border: 1px solid var(--darkaqua);
