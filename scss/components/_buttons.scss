@@ -22,3 +22,14 @@ button{
     padding: 16px 30px;
     border-radius: 10px; 
 }
+
+.closeButton {
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
