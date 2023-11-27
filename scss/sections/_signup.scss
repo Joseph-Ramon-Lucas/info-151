@@ -1,7 +1,7 @@
 #signUp{
     background-color: var(--darkaquatrans);
     height: 100vh;
-    display: flex;
+    // display: flex;
     align-items: center;
     justify-content: center;
     padding:160px;
@@ -9,6 +9,9 @@
     width: 100%;
     box-sizing: border-box;
     // margin-top: 10vh;
+
+
+    display: none;
 
 
     // #formContainer {

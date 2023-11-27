@@ -10,6 +10,10 @@ button{
     cursor: pointer;
 }
 
+button:hover {
+    background-color: rgb(79, 137, 245);
+}
+
 #send {
     background-color:deepskyblue;
     padding: 16px 30px;
@@ -23,7 +27,7 @@ button{
     border-radius: 10px; 
 }
 
-.closeButton {
+#closeButton {
     background-color: red;
     color: white;
     height: 50px;
