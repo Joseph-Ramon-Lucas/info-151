@@ -5,17 +5,25 @@ let miniNav = document.querySelector("#miniNav")
 
 let burgerButton = document.getElementById("burger-container");
 
+let burgerIcon = document.getElementById("burger-icon");
+let xbutton = document.getElementById("xbutton");
+
 let isNavVisible = false;
 
 
 burgerButton.addEventListener("click", () => {
     if (!isNavVisible) {
         miniNav.classList.add("showMiniNav");
+        xbutton.classList.add("showXbutton");
+        burgerIcon.classList.add("hideBurger");
         isNavVisible = true;
     } else {
         miniNav.classList.remove("showMiniNav");
+        xbutton.classList.remove("showXbutton");
+        burgerIcon.classList.remove("hideBurger")
         isNavVisible = false;
     }
+    
     
     console.log("button clickkkk");
 })
@@ -38,8 +46,6 @@ for(let button=0; button < signUpButtons.length; button++) {
         
     });
 }
-
-// console.log(closeButton);
 
 closeButton.addEventListener("click", () => {
     signUpContainer.classList.remove("showSignUpContainer");

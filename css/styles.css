@@ -358,6 +358,22 @@ ul li {
   display: flex !important;
 }
 
+.hideBurger {
+  display: none !important;
+}
+
+.showBurger {
+  display: block !important;
+}
+
+.hideXbutton {
+  display: none !important;
+}
+
+.showXbutton {
+  display: block !important;
+}
+
 /* =============
     Typography
 ============= */
@@ -606,7 +622,6 @@ header #topHeader #logo-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-area: logo;
 }
 header #topHeader #burger-container {
   display: -webkit-box;
@@ -618,7 +633,14 @@ header #topHeader #burger-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-area: burg;
+}
+header #topHeader #burger-container button #burger-icon {
+  display: block;
+}
+header #topHeader #burger-container button #xbutton {
+  display: none;
+  height: 20px;
+  width: 20px;
 }
 @media (min-width: 1024px) {
   header #topHeader #burger-container {

@@ -22,3 +22,19 @@ ul{
 .showSignUpContainer {
     display: flex !important;
 }
+
+.hideBurger {
+    display: none !important;
+}
+
+.showBurger {
+    display: block !important;
+}
+
+.hideXbutton {
+    display: none !important;
+}
+
+.showXbutton {
+    display: block !important;
+}
