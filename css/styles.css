@@ -662,7 +662,7 @@ header nav {
   background-image: url("../../img/hero.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 90vh;
 }
 
 #burger-menu {
@@ -720,4 +720,45 @@ header nav {
 #signUp form #buttonContainer button {
   margin-left: 10px;
   border: white 1px solid;
+}
+
+#fancybox {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". fb .";
+  margin: 50px 0;
+}
+@media (min-width: 768px) {
+  #fancybox {
+    margin: 100px 0;
+  }
+}
+@media (min-width: 1200px) {
+  #fancybox {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#fancybox #fancyGridItem {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: fb;
+}
+#fancybox #fancyGridItem ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 16px auto;
+  grid-template-columns: 50% auto;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #fancybox #fancyGridItem ul {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+#fancybox #fancyGridItem ul li img {
+  width: 100%;
 }

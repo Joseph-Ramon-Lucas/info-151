@@ -55,3 +55,8 @@ cancelButton.addEventListener("click", () => {
     signUpContainer.classList.remove("showSignUpContainer");
 })
 
+
+// fancybox
+
+Fancybox.bind()
+
